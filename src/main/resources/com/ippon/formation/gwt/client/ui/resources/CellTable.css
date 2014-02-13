@@ -1,0 +1,101 @@
+/*
+ * Copyright 2010 Google Inc.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+@def selectionBorderWidth 1px;
+.cellTableFirstColumn {
+	border-bottom: none;
+  	border-top: none;
+	border-left: selectionBorderWidth solid #dddddd;
+}
+
+.cellTableLastColumn {
+	border-bottom: none;
+  	border-top: none;
+	border-right: selectionBorderWidth solid #dddddd;
+}
+
+.cellTableFooter {
+}
+
+.cellTableHeader {
+  	display: table-cell;
+	line-height: 1.125em;
+	padding: 0.5em 0.625em 0.625em;
+	text-align: left;
+	border-bottom: none;
+	text-shadow: none;
+	color: #222222;
+	background-color: rgb(245, 245, 245);
+}
+
+.cellTableCell {
+	display: table-cell;
+	padding: 0.5625em 0.625em;
+	font-size: 0.875em;
+	text-align: left;
+	border: none;
+}
+
+.cellTableFirstColumnFooter {
+  
+}
+
+.cellTableFirstColumnHeader {
+  
+}
+
+.cellTableLastColumnFooter {
+  
+}
+
+.cellTableLastColumnHeader {
+  
+}
+
+.cellTableSortedHeaderAscending {
+
+}
+
+.cellTableSortedHeaderDescending {
+
+}
+
+.cellTableEvenRow {
+}
+
+.cellTableOddRow {
+	background: #f9f9f9;
+}
+
+.cellTableHoveredRow {
+	background: #eee;
+}
+
+.cellTableKeyboardSelectedRow {
+	background: #ffc;
+}
+
+.cellTableSelectedRow {
+	background: #1399bd;
+  	height: auto;
+  	overflow: auto;
+}
+.cellTableSelectedRowCell {
+	color: white;
+}
+
+.cellTableLoading {
+  margin: 0;
+}

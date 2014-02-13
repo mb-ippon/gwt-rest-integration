@@ -1,0 +1,69 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:w="urn:import:com.ippon.formation.gwt.client.ui.widget"
+	xmlns:date="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:with type="com.ippon.formation.gwt.client.ui.resources.Messages" field="mes" />
+	<ui:style>
+	</ui:style>
+	<g:HTMLPanel styleName="panel">
+		<form>
+			<div class="row">
+				<div class="small-3 columns">
+					<Label for="name" class="left inline" ui:field="lblName"></Label>
+			    </div>
+			    <div class="small-9 columns">
+			    	<g:TextBox ui:field="name"></g:TextBox>	
+			    </div>
+			  </div>
+			  <div class="row">
+				<div class="small-3 columns">
+			    	<Label for="height" class="left inline" ui:field="lblHeight"></Label>
+			    </div>
+			    <div class="small-9 columns">
+			         <g:IntegerBox ui:field="height"></g:IntegerBox>	
+			    </div>
+			  </div>
+			  <div class="row">
+				<div class="small-3 columns">
+			    	<Label for="weight" class="left inline" ui:field="lblWeight"></Label>
+			    </div>
+			    <div class="small-9 columns">
+			         <g:IntegerBox ui:field="weight"></g:IntegerBox>	
+			    </div>
+			  </div>
+			  <div class="row">
+				<div class="small-3 columns">
+			    	<Label for="birthDay" class="left inline" ui:field="lblBirthday"></Label>
+			    </div>
+			    <div class="small-9 columns">
+			         <date:DateBox ui:field="birthDay"></date:DateBox>	
+			    </div>
+			  </div>
+			  <div class="row">
+				<div class="small-3 columns">
+			    	<Label for="playHand" class="left inline" ui:field="lblPlayHand"></Label>
+			    </div>
+			    <div class="small-9 columns">
+			        <w:PlaysBox ui:field="playHand"></w:PlaysBox>		
+			    </div>
+			  </div>
+			  <div class="row">
+				<div class="small-3 columns">
+			    	<Label for="yearTurnPro" class="left inline" ui:field="lblTurnPro"></Label>
+			    </div>
+			    <div class="small-9 columns">
+			        <w:YearBox ui:field="yearTurnPro"></w:YearBox>		
+			    </div>
+			  </div>
+			  <div class="row">
+				<div class="small-3 columns">
+			    	<Label for="country" class="left inline" ui:field="lblCountry"></Label>
+			    </div>
+			    <div class="small-9 columns">
+			        <g:TextBox ui:field="country"></g:TextBox>		
+			    </div>
+			  </div>
+		</form>
+	</g:HTMLPanel>
+</ui:UiBinder> 

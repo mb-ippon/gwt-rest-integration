@@ -1,0 +1,9 @@
+@external .important;
+@external .center;
+.important{
+			font-weight: bold;
+		}
+.center {
+	margin: 10px auto;
+	width: 50%;
+}

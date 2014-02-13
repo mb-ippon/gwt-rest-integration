@@ -1,0 +1,76 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:view="urn:import:com.ippon.formation.gwt.client.ui.view">
+	<ui:style>
+		footer{
+			background: #333;
+			padding: 24px 0 10px;
+			color: white;
+			font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			width: 100%;
+			position: fixed;
+			bottom: 0;
+		}
+		header{
+			background: #1399bd;
+			height : 135px;
+			color: white;
+			font-family: "Proxima Nova", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		header h1{
+			color: #fff;
+			font-weight: 500;
+		}
+		header h4{
+			color: #fff;
+			font-weight: 300;
+		}
+		.content{
+			margin-top: 44px;
+			margin-bottom: 22px;
+			padding-bottom: 22px;
+			max-width: 60em;
+			height: 100%;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<a href="https://github.com/mb-ippon/gwt-server-communication">
+			<img style="position: absolute; top: 0; right: 0; border: 0;" 
+				src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"/>
+		</a>
+		<header>
+			<div class="row">
+		    	<div class="twelve columns">
+		      		<h1 ui:field="title"></h1>
+		        	<h4 ui:field="exercise"></h4>
+		    	</div>
+		    </div>
+		</header>
+		<section id="mainContent" class="row {style.content}">
+			<div class="large-6 columns">
+				<view:PlayersViewImpl ui:field="classement"/>
+			</div>
+			<div class="large-6 columns">
+				<view:PlayerViewImpl ui:field="player"/>
+			</div>
+		</section>
+		<footer>
+			<div class="row">
+				<div class="large-6 columns">
+					<p>Design with <a href="http://foundation.zurb.com/">Foundation</a></p>
+				</div>
+				<div class="large-6 columns">
+					<ul class="inline-list right">
+						<li>
+							<a href="http://www.ippon.fr/">Ippon Technologies</a>
+						</li>
+						<li>
+							<a href="http://blog.ippon.fr/">Blog Ippon Technologies</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</g:HTMLPanel>
+</ui:UiBinder> 
