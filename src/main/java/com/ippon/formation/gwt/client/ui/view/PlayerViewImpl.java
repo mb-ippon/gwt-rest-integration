@@ -11,12 +11,12 @@ import com.google.gwt.user.client.ui.IntegerBox;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.gwt.user.datepicker.client.DateBox;
+import com.ippon.formation.gwt.client.domain.bindery.autobean.PlayerAutoBean;
 import com.ippon.formation.gwt.client.ui.resources.ApplicationResources;
 import com.ippon.formation.gwt.client.ui.widget.PlaysBox;
 import com.ippon.formation.gwt.client.ui.widget.YearBox;
-import com.ippon.formation.gwt.shared.domain.entities.Player;
 
-public class PlayerViewImpl extends Composite implements PlayerView, Editor<Player> {
+public class PlayerViewImpl extends Composite implements PlayerView, Editor<PlayerAutoBean> {
 
     private static PlayerViewImplUiBinder uiBinder = GWT.create(PlayerViewImplUiBinder.class);
 
