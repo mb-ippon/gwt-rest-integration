@@ -3,6 +3,9 @@ package com.ippon.formation.gwt.shared.domain.entities;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Player implements Serializable {
 
     /**
@@ -14,7 +17,7 @@ public class Player implements Serializable {
 
     }
 
-    public Player(String name, int height, int weight, Date birthDay, Plays playHand, int yearTurnPro,
+    public Player(String name, Integer height, Integer weight, Date birthDay, Plays playHand, Integer yearTurnPro,
             Integer atpPoint, Country country) {
         this.name = name;
         this.height = height;
@@ -28,9 +31,9 @@ public class Player implements Serializable {
 
     private String name;
     private Date birthDay;
-    private int height;
-    private int weight;
-    private int yearTurnPro;
+    private Integer height;
+    private Integer weight;
+    private Integer yearTurnPro;
     private Integer atpPoint;
     private Country country;
 
@@ -44,10 +47,6 @@ public class Player implements Serializable {
 
     public void setBirthDay(Date birthDay) {
         this.birthDay = birthDay;
-    }
-
-    public void setAtpPoint(Integer atpPoint) {
-        this.atpPoint = atpPoint;
     }
 
     // the way which he plays
@@ -73,7 +72,7 @@ public class Player implements Serializable {
         return height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(Integer height) {
         this.height = height;
     }
 
@@ -81,7 +80,7 @@ public class Player implements Serializable {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(Integer weight) {
         this.weight = weight;
     }
 
@@ -89,7 +88,7 @@ public class Player implements Serializable {
         return yearTurnPro;
     }
 
-    public void setYearTurnPro(int yearTurnPro) {
+    public void setYearTurnPro(Integer yearTurnPro) {
         this.yearTurnPro = yearTurnPro;
     }
 
@@ -105,7 +104,7 @@ public class Player implements Serializable {
         return atpPoint;
     }
 
-    public void setAtpPoint(int atpPoint) {
+    public void setAtpPoint(Integer atpPoint) {
         this.atpPoint = atpPoint;
     }
 

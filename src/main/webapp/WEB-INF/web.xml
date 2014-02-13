@@ -11,7 +11,7 @@
 		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
 		<init-param>
 			<param-name>com.sun.jersey.config.property.packages</param-name>
-			<param-value>com.ippon.formation.gwt.server.resources;org.codehaus.jackson.jaxrs</param-value>
+			<param-value>com.ippon.formation.gwt.server.resources;org.codehaus.jackson.jaxrs;com.ippon.formation.gwt.shared.domain.entities</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>

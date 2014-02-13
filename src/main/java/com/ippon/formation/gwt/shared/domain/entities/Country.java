@@ -2,6 +2,9 @@ package com.ippon.formation.gwt.shared.domain.entities;
 
 import java.io.Serializable;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Country implements Serializable {
 
     /**
